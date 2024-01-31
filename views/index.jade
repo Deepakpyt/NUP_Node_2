@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  h2= message
+  h3= info
+  p Welcome to #{title}
+  ul 
+    li= methods.getAll 
+    li= methods.getById 
+    li= methods.updateById 
+    li= methods.deleteById
