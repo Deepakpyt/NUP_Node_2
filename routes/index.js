@@ -14,7 +14,8 @@ router.get("/", function (req, res, next) {
       updateById: "/users/:id/update",
       deleteById: "/users/:id/delete",
     },
-  }).json("Hello");
+    data:"Hello"
+  })
   
 });
 
