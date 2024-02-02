@@ -6,7 +6,23 @@ block content
   h3= info
   p Welcome to #{title}
   ul 
-    li= methods.getAll 
-    li= methods.getById 
-    li= methods.updateById 
-    li= methods.deleteById
+    li
+      strong GET 
+      | #{methods.getAll} - 
+      em Get All Users 
+    li
+      strong GET 
+      | #{methods.getById} - 
+      em Get user by ID
+    li
+      strong POST 
+      | #{methods.addUser} - 
+      em Add a new User 
+    li
+      strong PUT 
+      | #{methods.updateById} - 
+      em Update a User by ID 
+    li
+      strong DELETE  
+      | #{methods.deleteById} - 
+      em Delete a User

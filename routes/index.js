@@ -11,6 +11,7 @@ router.get("/", function (req, res, next) {
     methods: {
       getAll: "/users",
       getById: "/users/:id",
+      addUser: "/users/add",
       updateById: "/users/:id/update",
       deleteById: "/users/:id/delete",
     },
